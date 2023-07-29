@@ -1,3 +1,31 @@
+Tecnologías Backend:
+
+Spring Boot: Framework de desarrollo para aplicaciones Java que facilitó la creación de la API RESTful.
+Spring Data JPA: Para el acceso a la base de datos y el mapeo objeto-relacional (ORM).
+MySQL: Base de datos relacional utilizada para almacenar la información de los clientes.
+Hibernate: Framework ORM que permitió interactuar con la base de datos de manera eficiente.
+Java 17: Lenguaje de programación utilizado para el desarrollo del backend.
+Maven: Herramienta de gestión de proyectos utilizada para construir y administrar las dependencias del proyecto.
+Lombok: Biblioteca que simplificó la generación de código repetitivo, como getters, setters y constructores.
+Tecnologías Frontend:
+
+React: Biblioteca JavaScript utilizada para construir la interfaz de usuario interactiva y dinámica.
+React Router: Para el manejo de las rutas y la navegación dentro de la aplicación.
+HTML5 y CSS3: Utilizados para estructurar y diseñar la interfaz de usuario.
+Axios: Biblioteca para realizar solicitudes HTTP desde el frontend hacia el backend.
+Desarrollo y Despliegue:
+
+Visual Studio Code: Editor de código utilizado para el desarrollo de la aplicación.
+Docker: Contenerización de la aplicación para facilitar el despliegue en diferentes entornos.
+Git y GitHub: Control de versiones y colaboración en equipo.
+Resultados:
+El proyecto de gestión de clientes se completó con éxito, entregado dentro del plazo establecido y con funcionalidades que recibieron una excelente respuesta de los usuarios. La aplicación destacó por su interfaz amigable y su rendimiento eficiente gracias a las tecnologías utilizadas.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
