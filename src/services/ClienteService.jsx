@@ -8,6 +8,10 @@ getAllClientes () {
     return axios.get (Cliente_BASE_REST_API_URL)
 }
 
+createCliente (cliente)  {
+    return axios.post (Cliente_BASE_REST_API_URL , cliente);
+}
+
 }
 
 export default new ClienteService ();
