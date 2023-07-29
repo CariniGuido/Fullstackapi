@@ -6,13 +6,27 @@ export const ListClientesComponent = () => {
   const [clientes, setClientes] = useState([]);
 
   useEffect (() => {
-ClienteService.getAllClientes().then(response=> {
+  listarClientes()
+  },[])
+
+ const  listarClientes = () => {
+  ClienteService.getAllClientes().then(response=> {
     setClientes(response.data);
     console.log (response.data);
 }).catch(error => {
     console.log (error);
 })
-  },[])
+
+
+ }
+
+const deleteCliente = (clienteId) => {
+  ClienteService.deleteCliente (clienteId).then((response) => {
+  listarClientes ();
+  }).catch(error => {
+    console.log (error);
+  })
+}
 
   return (
     <div className="container">
@@ -25,6 +39,7 @@ ClienteService.getAllClientes().then(response=> {
             <th>NOMBRE</th>
             <th>APELLIDO</th>
             <th>EMAIL</th>
+            <th>ACCIONES</th>
           </tr>
         </thead>
         <tbody>
@@ -34,6 +49,11 @@ ClienteService.getAllClientes().then(response=> {
               <td>{cliente.nombre}</td>
               <td>{cliente.apellido}</td>
               <td>{cliente.email}</td>
+              <td>
+                <Link className='btn btn-info' to={`/edit-cliente/${cliente.id}`}>Actualizar</Link>
+
+                <button style={{marginLeft:"10px"}} className="btn btn-danger" onClick={() => deleteCliente(cliente.id)}>Eliminar cliente</button>
+              </td>
             </tr>
           ))}
         </tbody>
